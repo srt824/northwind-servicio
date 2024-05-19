@@ -1,0 +1,31 @@
+﻿@model ClienteMVC.Models.Shipper
+
+<h1>Nueva empresa de Flete</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Agregar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="ShipperID" class="control-label"></label>
+                <input asp-for="ShipperID" class="form-control" />
+                <span asp-validation-for="ShipperID" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
